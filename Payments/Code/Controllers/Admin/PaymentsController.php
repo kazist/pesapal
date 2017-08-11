@@ -8,17 +8,17 @@
  */
 
 /**
- * Description of PesapalController
+ * Description of PaymentsController
  *
  * @author sbc
  */
 
-namespace Pesapal\Payments\Pesapal\Code\Controllers\Admin;
+namespace Pesapal\Payments\Code\Controllers\Admin;
 
 defined('KAZIST') or exit('Not Kazist Framework');
 
 use Kazist\Controller\BaseController;
 
-class PesapalController extends BaseController {
+class PaymentsController extends BaseController {
     
 }

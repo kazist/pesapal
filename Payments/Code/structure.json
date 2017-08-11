@@ -303,7 +303,7 @@
         }
     ],
     "primarykey": "id",
-    "table_name": "pesapal_payments_pesapal",
+    "table_name": "pesapal_payments",
     "table_alias": "fpp",
     "foreignkey": "",
     "renamedfields": "",
@@ -320,9 +320,9 @@
     "right_field": "",
     "query": {
         "from": {
-            "table": "Pesapal\\Payments\\Pesapal\\Code\\Tables\\Pesapal",
+            "table": "Pesapal\\Payments\\Code\\Tables\\Pesapal",
             "alias": "fpp",
-            "name": "#__pesapal_payments_pesapal"
+            "name": "#__pesapal_payments"
         },
         "select": [
             "fpp.id",

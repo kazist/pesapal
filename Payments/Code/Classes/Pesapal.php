@@ -1,6 +1,6 @@
 <?php
 
-namespace Pesapal\Payments\Pesapal\Code\Classes;
+namespace Pesapal\Payments\Code\Classes;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

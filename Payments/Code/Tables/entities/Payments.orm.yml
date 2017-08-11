@@ -1,5 +1,5 @@
-Pesapal\Payments\Pesapal\Code\Tables\Pesapal:
-  table: pesapal_payments_pesapal
+Pesapal\Payments\Code\Tables\Payments:
+  table: pesapal_payments
   type: entity
   id:
     id:

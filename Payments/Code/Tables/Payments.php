@@ -1,13 +1,13 @@
 <?php
 
-namespace Pesapal\Payments\Pesapal\Code\Tables;
+namespace Pesapal\Payments\Code\Tables;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Pesapal
  *
- * @ORM\Table(name="pesapal_payments_pesapal")
+ * @ORM\Table(name="pesapal_payments")
  * @ORM\Entity
  * @ORM\HasLifecycleCallbacks
  */

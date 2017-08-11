@@ -8,20 +8,20 @@
  */
 
 /**
- * Description of PesapalController
+ * Description of PaymentsController
  *
  * @author sbc
  */
 
-namespace Pesapal\Payments\Pesapal\Code\Controllers;
+namespace Pesapal\Payments\Code\Controllers;
 
 defined('KAZIST') or exit('Not Kazist Framework');
 
 use Kazist\Controller\BaseController;
-use Pesapal\Payments\Pesapal\Code\Models\PesapalModel;
+use Pesapal\Payments\Code\Models\PesapalModel;
 use Pesapal\Payments\Code\Controllers\PaymentsController;
 
-class PesapalController extends PaymentsController {
+class PaymentsController extends PaymentsController {
 
     public function cancelAction() {
 

@@ -6,14 +6,14 @@
  * and open the template in the editor.
  */
 
-namespace Pesapal\Payments\Pesapal\Code\Models;
+namespace Pesapal\Payments\Code\Models;
 
 defined('KAZIST') or exit('Not Kazist Framework');
 
 use Kazist\Model\BaseModel;
 use Kazist\KazistFactory;
 use Pesapal\Payments\Code\Models\PaymentsModel;
-use Pesapal\Payments\Pesapal\Code\Classes\Pesapal;
+use Pesapal\Payments\Code\Classes\Pesapal;
 
 /**
  * Description of MarketplaceModel
