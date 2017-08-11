@@ -16,6 +16,7 @@
         "withdraw_file_suffix": "",
         "file_type": "csv",
         "file_limit": "2000",
+        "form_path": "Pesapal/Payments/Code/gateways",
         "url": "https://www.pesapal.com/API/PostPesapalDirectOrderV4",
         "published": "1"
     }]
