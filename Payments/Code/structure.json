@@ -11,7 +11,7 @@
                                 "items": [
                                     {
                                         "group": {
-                                            "name": "Pesapal Detail",
+                                            "name": "Pesapal Payments Detail",
                                             "unique_name": "pesapal_detail",
                                             "has_title": 1,
                                             "user_right": 0,

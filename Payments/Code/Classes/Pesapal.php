@@ -22,7 +22,7 @@ class Pesapal {
 
     public function getPesapalIframe($parameters) {
 
-        require_once(JPATH_ROOT . 'applications/Pesapal/Payments/Pesapal/Code/Classes/OAuth.php');
+        require_once(JPATH_ROOT . 'applications/Pesapal/Payments/Code/Classes/OAuth.php');
 
         $paymentmodel = new PaymentsModel();
 
@@ -78,7 +78,7 @@ class Pesapal {
 
     public function processReturns($parameters) {
 
-        require_once(JPATH_ROOT . 'applications/Pesapal/Payments/Pesapal/Code/Classes/OAuth.php');
+        require_once(JPATH_ROOT . 'applications/Pesapal/Payments/Code/Classes/OAuth.php');
 
         $consumer_key = $parameters['consumer_key']; //Register a merchant account on
         //demo.pesapal.com and use the merchant key for testing.

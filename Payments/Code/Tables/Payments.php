@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\HasLifecycleCallbacks
  */
-class Pesapal extends \Kazist\Table\BaseTable
+class Payments extends \Kazist\Table\BaseTable
 {
     /**
      * @var integer

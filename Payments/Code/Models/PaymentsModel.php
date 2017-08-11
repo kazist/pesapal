@@ -20,7 +20,7 @@ use Pesapal\Payments\Code\Classes\Pesapal;
  *
  * @author sbc
  */
-class PesapalModel extends PaymentsModel {
+class PaymentsModel extends PaymentsModel {
 
     public $code = '';
 

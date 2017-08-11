@@ -17,8 +17,8 @@ namespace Pesapal\Payments\Code\Controllers\Admin;
 
 defined('KAZIST') or exit('Not Kazist Framework');
 
-use Kazist\Controller\BaseController;
+use Payments\Payments\Code\Controllers\PaymentsController AS BasePaymentsController;
 
-class PaymentsController extends BaseController {
+class PaymentsController extends BasePaymentsController {
     
 }

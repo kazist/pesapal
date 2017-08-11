@@ -17,31 +17,30 @@ namespace Pesapal\Payments\Code\Controllers;
 
 defined('KAZIST') or exit('Not Kazist Framework');
 
-use Kazist\Controller\BaseController;
-use Pesapal\Payments\Code\Models\PesapalModel;
-use Pesapal\Payments\Code\Controllers\PaymentsController;
+use Pesapal\Payments\Code\Models\PaymentsModel;
+use Payments\Payments\Code\Controllers\PaymentsController AS BasePaymentsController;
 
-class PaymentsController extends PaymentsController {
+class PaymentsController extends BasePaymentsController {
 
     public function cancelAction() {
 
         $payment_id = $this->request->query->get('pesapal_merchant_reference');
 
-        $this->model = new PesapalModel();
+        $this->model = new PaymentsModel();
         $this->model->cancelTransaction($payment_id);
         $payment_url = $this->model->getUrlByPaymentId($payment_id);
 
-        
+
         return $this->redirect($payment_url);
     }
 
     public function returnAction() {
-      
+
         $payment_id = $this->request->query->get('pesapal_merchant_reference');
 
-        $this->model = new PesapalModel();
+        $this->model = new PaymentsModel();
         $this->model->completeTransaction($payment_id);
-        
+
         $payment_url = $this->model->getUrlByPaymentId($payment_id);
 
         return $this->redirect($payment_url);
