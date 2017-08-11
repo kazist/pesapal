@@ -10,9 +10,8 @@ namespace Pesapal\Payments\Code\Models;
 
 defined('KAZIST') or exit('Not Kazist Framework');
 
-use Kazist\Model\BaseModel;
 use Kazist\KazistFactory;
-use Pesapal\Payments\Code\Models\PaymentsModel;
+use Payments\Payments\Code\Models\PaymentsModel AS BasePaymentModel;
 use Pesapal\Payments\Code\Classes\Pesapal;
 
 /**
@@ -20,7 +19,7 @@ use Pesapal\Payments\Code\Classes\Pesapal;
  *
  * @author sbc
  */
-class PaymentsModel extends PaymentsModel {
+class PaymentsModel extends BasePaymentModel {
 
     public $code = '';
 
