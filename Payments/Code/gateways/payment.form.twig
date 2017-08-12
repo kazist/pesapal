@@ -1,4 +1,4 @@
-<!-- Specify a Subscribe button. -->
+<!-- Specify a Subscribe button. --> 
 {% set params = {'gateway_id':gateway.id, 'parameter':'consumer_key'} %}
 {% set consumer_key = callFunction( "Payments.Payments.Code.Models.PaymentsModel", 'getGatewayParameter', params) %}
 
