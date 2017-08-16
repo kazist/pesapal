@@ -1,0 +1,6 @@
+{
+    "PesapalPayments": {
+        "namespace": "Pesapal\\Payments",
+        "controller": "PaymentsController"
+    }
+}

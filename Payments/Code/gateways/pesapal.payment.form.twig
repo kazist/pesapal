@@ -1,0 +1,30 @@
+<!-- Specify a Subscribe button. --> 
+
+{% set consumer_key = get_setting('pesapal_payments_consumer_key') %}
+{% set consumer_secret = get_setting('pesapal_payments_consumer_secret') %}
+{% set iframelink = get_setting('pesapal_payments_iframelink') %}
+{% set type = get_setting('pesapal_payments_type') %}
+
+{% set parameters =
+   {
+        'parameters': {
+            'consumer_key':consumer_key,
+            'consumer_secret':consumer_secret,
+            'iframelink':iframelink,
+            'type':type,
+
+            'reference':payment.id,
+            'amount':gateway.total_amount,
+            'description':payment.description,
+
+            'first_name':user.name,
+            'last_name':user.name,
+            'email':user.email,
+            'callback_url': generate_url('pesapal.payments.return', null, 0  )
+        }
+    }
+%}
+
+{% set pesapal = callFunction( "Pesapal.Payments.Code.Classes.Pesapal", 'getPesapalIframe', parameters) %}
+
+{{ pesapal|raw }}
