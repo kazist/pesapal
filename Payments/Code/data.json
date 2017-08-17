@@ -1,7 +1,7 @@
 
 [{
         "_table_name": "payments_gateways",
-        "tracking_id": "15",
+        "system_tracking_id": "15",
         "short_name": "pesapal",
         "long_name": "Pesapal",
         "input_label": "Pesapal",
