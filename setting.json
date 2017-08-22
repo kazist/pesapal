@@ -7,21 +7,25 @@
                     "name": "pesapal_payments_consumer_key",
                     "label": "Consumer Key ",
                     "default": "",
+                    "tooltip": "Set Consumer Key as show on the pesapal website.",
                     "type": "text"
                 }, {
                     "name": "pesapal_payments_consumer_secret",
                     "label": "Consumer Secret",
+                    "tooltip": "Set Consumer Secret as show on the pesapal website.",
                     "default": "",
                     "type": "text"
                 }, {
                     "name": "pesapal_payments_iframelink",
                     "label": "Iframelink",
                     "default": "",
+                    "tooltip": "Set preferred iframelink for processing payments.",
                     "type": "text"
                 }, {
                     "name": "pesapal_payments_type",
                     "label": "Pesapal Type",
                     "default": "",
+                    "tooltip": "Set Pesapal type.",
                     "type": "text"
                 }]
         }]
